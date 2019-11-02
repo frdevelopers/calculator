@@ -56,7 +56,6 @@ div.buttons_area {
     border-radius: 50px;
     background-color: white;
     color: #62C7F3;
-    font-size: 1.4em;
     box-shadow: 1px;
     padding: 15px;
     margin: 5px;
@@ -64,35 +63,39 @@ div.buttons_area {
     box-shadow: 0px 0px 10px lightgray;
 }
 
+.defaultBtn input {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: inherit;
+    padding: 0px;
+    font-size: 1.2em;
+    color: #62C7F3;
+    border: none;
+    outline: none;
+}
+
 .defaultBtn:hover {
     box-shadow: 0px 0px 10px gray;
     cursor: pointer;
 }
 
-div.defaultBtn.btn4 {
+div.defaultBtn.btn4,
+div.defaultBtn.btn8,
+div.defaultBtn.btn12,
+div.defaultBtn.btn16,
+div.defaultBtn.btn19 {
     background-color: #62C7F3;
-    color: white
-}
-
-div.defaultBtn.btn8 {
-    background-color: #62C7F3;
-    color: white
-}
-
-div.defaultBtn.btn12 {
-    background-color: #62C7F3;
-    color: white
-}
-
-div.defaultBtn.btn16 {
-    background-color: #62C7F3;
-    color: white
 }
 
 div.defaultBtn.btn19 {
     grid-column: 3 / span 2;
-    background-color: #62C7F3;
-    color: white
+}
+
+div.defaultBtn.btn4 input,
+div.defaultBtn.btn8 input,
+div.defaultBtn.btn12 input,
+div.defaultBtn.btn16 input,
+div.defaultBtn.btn19 input {
+    color: white;
 }
 
 div.display1 input {

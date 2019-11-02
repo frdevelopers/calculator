@@ -7,6 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
+
+    <script>
+        function dAction(bvalue) {
+            document.getElementById('display1').value += bvalue;
+        }
+
+        function clearAction() {
+            document.getElementById('display1').value = "";
+            document.getElementById('display2').value = "";
+        }
+    </script>
 </head>
 
 <body>
@@ -14,77 +25,75 @@
     <div class="mainContainer">
         <div class="display_area">
             <div class="display1">
-                <input type="text" placeholder="2 x 2">
+                <input id="display1" type="text" readonly placeholder="">
             </div>
             <div class="display2">
-                <input type="text" placeholder="4">
+                <input id="display2" type="text" readonly placeholder="0">
             </div>
         </div>
         <div class="buttons_area">
-            <div class="defaultBtn btn1">
-                <span>C</span>
+            <div class="defaultBtn btn1" onclick="clearAction()">
+                <input type="button" value="C">
             </div>
-            <div class="defaultBtn btn2">
-                <span>+/-</span>
+            <div class="defaultBtn btn2" onclick="">
+                <input type="button" value="+/-">
             </div>
-            <div class="defaultBtn btn3">
-                <span>%</span>
+            <div class="defaultBtn btn3" onclick="dAction('%')">
+                <input type="button" value="%">
             </div>
-            <div class="defaultBtn btn4">
-                <span>/</span>
+            <div class="defaultBtn btn4" onclick="dAction('/')">
+                <input type="button" value="/">
             </div>
-            <div class="defaultBtn btn5">
-                <span>7</span>
+            <div class="defaultBtn btn5" onclick="dAction(7)">
+                <input type="button" value="7">
             </div>
-            <div class="defaultBtn btn6">
-                <span>8</span>
+            <div class="defaultBtn btn6" onclick="dAction(8)">
+                <input type="button" value="8">
             </div>
-            <div class="defaultBtn btn7">
-                <span>9</span>
+            <div class="defaultBtn btn7" onclick="dAction(9)">
+                <input type="button" value="9">
             </div>
-            <div class="defaultBtn btn8">
-                <span>*</span>
+            <div class="defaultBtn btn8" onclick="dAction('*')">
+                <input type="button" value="x">
             </div>
-            <div class="defaultBtn btn9">
-                <span>4</span>
+            <div class="defaultBtn btn9" onclick="dAction(4)">
+                <input type="button" value="4">
             </div>
-            <div class="defaultBtn btn10">
-                <span>5</span>
+            <div class="defaultBtn btn10" onclick="dAction(5)">
+                <input type="button" value="5">
             </div>
-            <div class="defaultBtn btn11">
-                <span>6</span>
+            <div class="defaultBtn btn11" onclick="dAction(6)">
+                <input type="button" value="6">
             </div>
-            <div class="defaultBtn btn12">
-                <span>-</span>
+            <div class="defaultBtn btn12" onclick="dAction('-')">
+                <input type="button" value="-">
             </div>
-            <div class="defaultBtn btn13">
-                <span>1</span>
+            <div class="defaultBtn btn13" onclick="dAction(1)">
+                <input type="button" value="1">
             </div>
-            <div class="defaultBtn btn14">
-                <span>2</span>
+            <div class="defaultBtn btn14" onclick="dAction(2)">
+                <input type="button" value="2">
             </div>
-            <div class="defaultBtn btn15">
-                <span>3</span>
+            <div class="defaultBtn btn15" onclick="dAction(3)">
+                <input type="button" value="3">
             </div>
-            <div class="defaultBtn btn16">
-                <span>+</span>
+            <div class="defaultBtn btn16" onclick="dAction('+')">
+                <input type="button" value="+">
             </div>
-            <div class="defaultBtn btn17">
-                <span>0</span>
+            <div class="defaultBtn btn17" onclick="dAction(0)">
+                <input type="button" value="0">
             </div>
-            <div class="defaultBtn btn18">
-                <span>.</span>
+            <div class="defaultBtn btn18" onclick="dAction('.')">
+                <input type="button" value=".">
             </div>
-            <div class="defaultBtn btn19">
-                <span>=</span>
+            <div class="defaultBtn btn19" onclick="eAction()">
+                <input type="button" value="=">
             </div>
         </div>
     </div>
     <div class="credits" style="text-align: center;padding:20px;color:white;">
         Developed by : Muhammad Farhan
     </div>
-
-
 </body>
 
 </html>
